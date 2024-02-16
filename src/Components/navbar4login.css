@@ -1,0 +1,83 @@
+/* Estilos para navbarLogin */
+.navbarLogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    height: 50px;
+  }
+  .navbarLS {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    height: 50px;
+  }
+  
+  /* Estilos para la sección izquierda */
+  .left-section {
+    text-align: left;
+    width: 300px;
+    margin-left: -20px;
+  }
+  
+  .logopagina {
+    text-decoration: none;
+  }
+  
+  .logoimagen {
+    width: 25%; /* Ajusta el tamaño de la imagen según sea necesario */
+  }
+  
+  /* Estilos para la sección central */
+  .center-section {
+    text-align: center;
+    margin-left: -150px;
+  }
+  
+  .center-section h1 {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+
+  }
+  .center-section 
+  
+  /* Estilos para la sección derecha */
+  .right-section {
+    text-align: right;
+  }
+  
+  .button-container {
+    display: flex;
+  }
+  
+  .login-button,
+  .signup-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  
+  .signup-button {
+    border-color: white;
+    border-radius: 20px;
+  }
+  
+  .signup-button:hover {
+    background: #f0f0f0;
+    color: #333;
+    border-color: #ccc;
+  }
+  .login-button:hover {
+    color: #333; 
+  }

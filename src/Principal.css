@@ -1,0 +1,38 @@
+
+  
+  .container-anim {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    margin: auto; /* Añadido para centrar horizontalmente */
+    margin-top: 500px;
+
+  }
+  
+  .container-anim h1,
+  .container-anim h2 {
+    display: block;
+    margin-bottom: 10px;
+    animation: typewriter 2s steps(40, end), fadeIn 2s ease-out;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
