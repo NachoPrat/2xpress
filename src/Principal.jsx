@@ -1,7 +1,8 @@
 
 import React from 'react';
 import NavBar from './Components/navbar4login';
-import './Principal.css'; 
+import './style.css'
+//import './Principal.css'; 
 
 const Principal = () => {
   return (
