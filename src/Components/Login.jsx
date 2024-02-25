@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './LoginSignup.css';
 import correo from './assets/correo.png';
+import password from './assets/contraseña.png';
 import NavBarLS from './navbarLS';
 
 const Login = () => {
@@ -15,14 +16,16 @@ const Login = () => {
         <div className="underline"></div>
       </div>
       <div className="inputs">
-        <div className="label">Enter your email</div>
+        <form>
         <div className="input">
-          <input type="email" placeholder="" />
+          <img src={correo} alt="" />
+          <input type="email" placeholder="Enter your email" />
         </div>
-        <div className="label">Enter your password</div>
         <div className="input">
-          <input type="password" placeholder="" />
+        <img src={password} alt="" />
+          <input type="password" placeholder="Enter your password" />
         </div>
+        </form>
       </div>
       <div className="submit-container">
         <div className="no-account">

@@ -8,8 +8,8 @@ import{
     Route,
 } from "react-router-dom";
 import App from './App';
-import Signup from './Components/LoginSignup/Signup';
-import Login from './Components/LoginSignup/Login';
+import Signup from './Components/Signup';
+import Login from './Components/Login';
 
 
 

@@ -12,7 +12,7 @@ const navbarLS = () => {
           <img src={logo} alt="logopagina" className="logoimagen" />
         </a>
       </div>
-      <div className="center-section" style={{marginLeft: '-280px'}}>
+      <div className="center-section" style={{marginLeft: '-285px'}}>
         {/* Agrega el estilo para quitar el subrayado y el margen izquierdo */}
         <a href="../" style={{ textDecoration: 'none',  }}>
           <h1>2XPRESS</h1>

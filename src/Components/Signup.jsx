@@ -1,29 +1,13 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { auth } from './../firebase'; // Asegúrate de que la ruta a firebase.js sea correcta
-import { createUserWithEmailAndPassword } from 'firebase/auth';
 import './LoginSignup.css';
+import profile from './assets/profile.png'
 import correo from './assets/correo.png';
+import password from './assets/contraseña.png';
 import NavBarLS from './navbarLS';
+
 
 const Signup = () => {
   const [action, setAction] = useState('Sign Up');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [user, setUser] = useState('');
-  const navigate = useNavigate();
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      // Redirigir a la página de tareas después del registro
-      navigate('/tasks');
-    } catch (error) {
-      console.error("Error al crear la cuenta: ", error.message);
-      // Aquí puedes manejar el error, como mostrar un mensaje al usuario
-    }
-  };
 
   return (
     <div>
@@ -34,36 +18,20 @@ const Signup = () => {
         <div className="underline"></div>
       </div>
       <div className="inputs">
-        <div className="label">Create a new user</div>
-        <div className="input" onSubmit={handleSubmit}>
-          <input 
-              type="user"
-              value={user}
-              onChange={(e) => setUser(e.target.value)}
-              placeholder="Usuario"
-              required
-          />
-        </div>
-        <div className="label">Enter your email</div>
+        <form>
         <div className="input">
-          <input 
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
-              required 
-          />
+         <img src={profile} alt="" />
+          <input type="user" placeholder="Create a new user" />
         </div>
-        <div className="label">Enter your password</div>
         <div className="input">
-          <input 
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Contraseña"
-              required
-          />
+        <img src={correo} alt="" />
+          <input type="email" placeholder="Enter your email" />
         </div>
+        <div className="input">
+        <img src={password} alt="" />
+          <input type="password" placeholder="Enter your password" />
+        </div>
+        </form>
       </div>
       <div className="submit-container">
         <div className="no-account">
@@ -79,5 +47,3 @@ const Signup = () => {
 };
 
 export default Signup;
-
-
